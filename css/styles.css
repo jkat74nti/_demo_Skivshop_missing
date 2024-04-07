@@ -1,0 +1,82 @@
+header,  nav, main,footer{
+    border:2px solid grey ;
+    border-radius: 5px;
+    margin:5px;
+    background-color: black;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+.bild{
+    height: 100px;
+    width: auto;
+}
+h1{
+    text-align: center;
+    font-family: Georgia , Courier, monospace;
+    color: white
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 100px 1fr 6fr 1fr;
+}
+
+.drake{
+    background-image: url("../img/dragon_side.png");
+    background-size:cover ;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    
+}
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+
+
+}
+
+li{
+    margin-right: 20px;
+    background-color: black;
+    padding: 5px;
+    padding-bottom: 0px;
+    
+}
+
+a{
+    color: black;
+    background-color: white;
+    font-family: Georgia ;
+    font-weight: bold;
+
+    padding:5px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-content: space-around;
+    gap:15px
+}
+footer{
+    background-color: black;
+}
+
+p{
+    text-align: center;
+}
